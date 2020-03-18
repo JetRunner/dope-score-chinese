@@ -8,7 +8,7 @@ def rhyme_convert(yunmu):
         # 梭波
         'o': '2', 'e': '2', 'uo': '2',
         # 乜斜
-        'ie': '3', 've': '3',
+        'ie': '3', 've': '3', 'ue': '3',
         # 怀来
         'ai': '4', 'uai': '4',
         # 灰堆
@@ -44,11 +44,10 @@ def yunmu_to_rhyme(yunmus):
 
 
 def char_to_rhyme(s):
-    return yunmu_to_rhyme(char_to_yunmu(s))
+    return ''.join(yunmu_to_rhyme(char_to_yunmu(s)))
 
 
 def lrs(x):
-    x = ''.join(x)
     n = len(x)
     lcs_re = [[0 for _ in range(n + 1)] for _ in range(n + 1)]
 
@@ -87,7 +86,6 @@ def lrs(x):
 
 
 def lcs(x, y):
-    x = ''.join(x)
     matrix = [''] * (len(x) + 1)
     for index_x in range(len(matrix)):
         matrix[index_x] = [''] * (len(y) + 1)
@@ -103,3 +101,21 @@ def lcs(x, y):
 
     return matrix[len(x)][len(y)]
 
+
+def del_redundant_char(x):
+    char_set = set()
+    res = ''
+    for c in x:
+        if c not in char_set:
+            res += c
+            char_set.add(c)
+    return res
+
+
+def del_a_char_from_b(a, b):
+    char_set = set(list(a))
+    res = ''
+    for c in b:
+        if c not in char_set:
+            res += c
+    return res
