@@ -5,7 +5,7 @@ Automatic metric for evaluating rap lyrics in Chinese (Mandarin).
 This tool is only used for evaluating the quality of machine generated rap lyrics and only considers the rhymes in a rap song. **It does not in any way indicate the quality of a human-composed rap song.** This metric does not work on English nor Chinese dialects.
 
 ## How it works?
-This tool automatically measures the non-repeating "density" of rhymes in a line, between the line and its two previous lines. After calculating these subscores, we sum up them to be the total score.
+This tool automatically measures the non-repeating "density" of rhymes in a line, between the line and its two previous lines. After calculating these subscores, we sum up them to be the total score. We'll add more details later.
 
 ## Examples
 
@@ -28,6 +28,7 @@ This tool automatically measures the non-repeating "density" of rhymes in a line
 | 大碗宽面              | 吴亦凡          | 13\.65 | 28\.20 | 28\.61 | 70\.45  |
 
 PLEASE NOTICE: THIS TABLE IS CALCULATED BY A PROGRAM. IT DOES NOT INDICATE THE AUTHOR OF THIS REPO AGREES WITH THESE RESULTS!!
+
 请注意：本表是由程序计算得出，不代表程序作者同意此表中的结果！
 
 ## Usage
