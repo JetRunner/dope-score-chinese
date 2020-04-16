@@ -27,6 +27,9 @@ This tool automatically measures the non-repeating "density" of rhymes in a line
 | 天地                | 吴亦凡          | 12\.85 | 27\.70 | 31\.12 | 71\.66  |
 | 大碗宽面              | 吴亦凡          | 13\.65 | 28\.20 | 28\.61 | 70\.45  |
 
+PLEASE NOTICE: THIS TABLE IS CALCULATED BY A PROGRAM. IT DOES NOT INDICATE THE AUTHOR OF THIS REPO AGREES WITH THESE RESULTS!!
+请注意：本表是由程序计算得出，不代表程序作者同意此表中的结果！
+
 ## Usage
 ```bash
 python dope_score.py /path/to/the/lyrics.txt
