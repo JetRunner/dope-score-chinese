@@ -1,5 +1,5 @@
 # dope-score-chinese
-Automatic rap lyrics metric for Chinese (Mandarin).
+Automatic metric for evaluating rap lyrics in Chinese (Mandarin).
 
 ## Declaration
 This tool is only used for evaluating the quality of machine generated rap lyrics and only considers the rhymes in a rap song. **It does not in any way indicate the quality of a human-composed rap song.** This metric does not work on English nor Chinese dialects.
