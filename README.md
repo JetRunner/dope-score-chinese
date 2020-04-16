@@ -7,7 +7,7 @@ This tool is only used for evaluating the quality of machine generated rap lyric
 ## How it works?
 This tool automatically measures the non-repeating "density" of rhymes in a line, between the line and its two previous lines. After calculating these subscores, we sum up them to be the total score.
 
-## Result
+## Examples
 
 | 歌名(Title)                | 歌手(Artist)           | 句内(Inner)     | 句间(Inter-1)     | 跳押(Inter-2)     | 总分(Total)      |
 |-------------------|--------------|--------|--------|--------|---------|
@@ -26,3 +26,14 @@ This tool automatically measures the non-repeating "density" of rhymes in a line
 | 上学威龙              | MC法老         | 9\.91  | 33\.87 | 33\.16 | 76\.94  |
 | 天地                | 吴亦凡          | 12\.85 | 27\.70 | 31\.12 | 71\.66  |
 | 大碗宽面              | 吴亦凡          | 13\.65 | 28\.20 | 28\.61 | 70\.45  |
+
+## Usage
+```bash
+python dope_score.py /path/to/the/lyrics.txt
+```
+
+or
+
+```bash
+bash ./dope_score_dir.sh ./example_lyrics/
+```
