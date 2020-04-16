@@ -2,7 +2,7 @@
 Automatic rap lyrics metric for Chinese (Mandarin).
 
 ## Declaration
-This tool is only used for evaluating the quality of machine generated rap lyrics and only considers the rhymes in a rap song. It does not in any way indicate the quality of a human-composed rap song. This metric does not work on English nor Chinese dialects.
+This tool is only used for evaluating the quality of machine generated rap lyrics and only considers the rhymes in a rap song. **It does not in any way indicate the quality of a human-composed rap song.** This metric does not work on English nor Chinese dialects.
 
 ## How it works?
 This tool automatically measures the non-repeating "density" of rhymes in a line, between the line and its two previous lines. After calculating these subscores, we sum up them to be the total score.
